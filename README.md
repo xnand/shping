@@ -38,9 +38,9 @@ optional arguments:
 
 Note that the data you want to receive must be sent to ping as hex-encoded. This varies based on the tools you have at your disposal, for example you can use xxd or hexdump (see below).
 
-Also, the data you want to receive must be enclosed by a string of 16 identical characters (encapChr parameter). That's for 2 reasons:
+Also, the data you want to receive must be enclosed by a string of 16 identical characters (encapChr parameter). That's for two reasons:
 
-1. To ensure the data is always 16 bytes long. In reality, the padding space is larger, but ping only accepts 16 bytes, and if you feed it less it will reorder the bytes in a confusing way.
+1. To ensure the data is always 16 bytes long. In reality, the padding space is larger, but ping only accepts 16 bytes then repeats part of it, and if you feed it less it will reorder the bytes in a confusing way.
 2. To grab the offset where our data starts in the icmp packet.
 
 So on the remote machine you'll want to execute something like this:
