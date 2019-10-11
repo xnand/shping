@@ -13,6 +13,8 @@ You can even use it as a primitive shell, after setting it up properly.
 
 Does not work with windows ping or any other version that doesn't have that option.
 
+[![asciicast](https://asciinema.org/a/r44J5GJki15TZyvYaCsicVlzJ.svg)](https://asciinema.org/a/r44J5GJki15TZyvYaCsicVlzJ)
+
 ## usage
 
 ```
